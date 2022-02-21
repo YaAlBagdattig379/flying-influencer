@@ -95,12 +95,13 @@ body{
 } 
 /* ---------company logo style ----------*/
 .company-logo-container{
-    border: 1px solid green;
-    width: 986.47px;
-    height: 39.61px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   width: 1200px; 
+   height: 39.61px;
    display: flex; 
-   margin-left: 57px;
-   border-image-source: linear-gradient(to top, red, yellow);
+   margin-left: 54px; border-radius: 10px;
+   background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
 }
 .company-logo-container img{  
    margin-left:50px;   
