@@ -5,60 +5,158 @@
 /*-=---- body style --=-------*/
 body{
     background: #ebebeb;
+    background: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
-/*----------header style---------------- */
- /* .header-container{
-    display: flex;
-    justify-content:space-around;
+/*-----------------------
+    --------------------------header style---------------------------- */
+    /*----  menu container style ----*/
+.menu-container{
+    height: 25px ;
+    width: 1300px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    align-items: baseline;justify-items: center;
+    column-gap: 350px;
  } 
 #menu-title{
-    font-size: 30px;
-    color: black;
+    color: #3A3A3A;
+    font-size: 20px;
+    margin-right: 35px;
 } 
 
-/* .menu-template a{
+.menu-template a{
+    width: 263px;
     text-decoration: none;
-    margin-left: 1em;
-    font-size: 30px;
-    color: black;
-    margin-top: 200px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    margin-left: 1.5em;
 }  
-.menu-template{
-
-} */
-/*--------------------------
------------------------------main style--------------------
-                    ----------------------------------------------------------- */
- main{
-    display: flex;
-    justify-content: center;
-} 
-.container{
-    margin-right: 34px;
-    width: 1047px;
-    height: 1662px
+.menu-container a:hover{
+    color: rgb(55, 37, 172);
 }
+.menu-template{
+    margin-right: 9px;
+}  
+/* ----- heading container style---------*/
+.heading-container{
+    display: flex;
+     margin-left:65px;
+}
+.main-heading{
+    width: 582px;
+    height: 264px;
+    margin-right:74px;
+    margin-top: 163px;
+    margin-bottom: 160px;
+}
+.main-heading h1{    
+    width: 582px;
+    height: 133px;
+    font-weight: bold;
+    font-size: 52px;
+    color: #3A3A3A;
+}
+.main-heading p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+.main-heading button{
+    padding: 10px 28px;
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.heading-container .main-heading .heading-button .button-arrow{
+    margin-left:10px;
+}
+.heading-banner{
+    height:475px;
+    width:475px;
+    margin-top: 75px;
+    margin-left: 40px; 
+    margin-bottom: 90px;
+    position: relative;
+}
+.heading-banner .front-image{
+   position:absolute;
+   top: 0;
+   width: 440px;
+   height: 414px;
+} 
+/* ---------company logo style ----------*/
+.company-logo-container{
+    border: 1px solid green;
+    width: 986.47px;
+    height: 39.61px;
+   display: flex; 
+   margin-left: 57px;
+   border-image-source: linear-gradient(to top, red, yellow);
+}
+.company-logo-container img{  
+   margin-left:50px;   
+}
+/*------------main content style---------------------- */
 .main-content{ 
     text-align: center;
     color: #3A3A3A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom:30px;
+    margin-top: 130px;
  }
+/*--------------------------
+-----------------------------main style--------------------
+                    ----------------------------------------------------------- */
+main{
+    margin-right:20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+} 
+/*------------section style---------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} 
   .detail-collection{
     display: grid;
-    grid-template-columns: repeat(3,1fr);    
+    grid-template-columns: repeat(3,1fr);  
+    margin-right: 60px;  
     width: 1047px;
     height: 1662px;
-    grid-row-gap: 30px;
     column-gap: 30px;
+}
+.more-collection a{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(201, 34, 95, 0.87);
+    margin-top: 35px;
+    text-decoration: none;
+}
+.collection-arrow{
+    margin-left: 7px;
 }
 .collection{
     border-radius: 9px;
-    background: rgb(255, 255, 255);
     width: 329px;
     height: 476px;
     padding-left:  27px;
     padding-top:27px;
-    padding-bottom: 35px;   
+    padding-bottom: 22px;   background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
 }
 .product-view{
     width: 300px;
@@ -77,7 +175,6 @@ body{
 .product-cost{
     font-style: normal;
     font-size: 24px;
-    Weight: 400;
     margin-top: 16px;
     margin-bottom: 0px;
 }
@@ -92,21 +189,96 @@ body{
     font-size: 14px;
 }
 #star-rating i.empty{
-    color: rgb(255, 255, 255);
+    color: rgb(224, 213, 213);
     font-style: normal; 
     font-weight: bold;
     font-size: 14px;
 }
-
 .value-rating p{
     color: #5E6366;
     font-weight: bold;
     font-size: 14px;
-     margin-left: 17px;
-}/*
+     margin-left: 15px;
+}
 .product-accessibility{
     font-family: Inter;
-    font-weight: bold;
+    font-weight:700;
     font-size: 14px;
     color: #787885;
-}  */
+}
+ /*-------------
+ -----------------this is awosome features style-----------------------
+                      -------------------------------------------------- */
+#awesome-features{
+     display: grid;
+     grid-template-columns:repeat(2,1fr);
+     width: 1217px;
+     height: 270px;
+     align-items: center;
+     margin-left: 25px;
+     margin-bottom: 150px;
+}   
+.features-thumbnail{
+    margin-top: 100px;
+    width: 404px;
+    height: 270px;
+    border-radius: 7px;
+    margin-right: -125px;
+}
+.thumbnail-details{
+    margin-top: 70px;
+    margin-left: -125px;
+    Line-height: 50px;
+}
+.thumbnail-details h1{ 
+    font-style: normal;
+     font-weight: bold;
+    font-size: 45px;
+    color: #0A0826;
+    margin-left: 6px;
+    height:700;
+    Line-height :60px;
+    /* 
+    height: 224px; */
+   
+}
+.thumbnail-details p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #6C6C6C;
+    line-height: 20px;
+    margin-top: 10px;
+/* or 175% */
+
+
+color: #6C6C6C;
+
+}
+.thumbnail-details button{
+    color: #FFFFFF;
+    background: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 3px;   
+}
+/*------------
+           -----footer style -----------------  */
+#footer-container{
+    background: #0A0826;color: #FFFFFF;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    left: 0px;
+    right: 0px;
+}
+.footer-info:hover{
+    color: gold;
+}
+.footer-icon .icon{
+    margin-left: 1em;
+    color: #FFFFFF;
+}
+.footer-icon .icon:hover{
+    color:rgb(228, 167, 13)
+}
