@@ -10,7 +10,7 @@ body{
 }
 /*-----------------------
     --------------------------header style---------------------------- */
-    /*----  menu container style ----*/
+   /*----  menu container style ----*/
 .menu-container{
     height: 25px ;
     width: 1300px;
@@ -19,7 +19,7 @@ body{
     align-items: baseline;justify-items: center;
     column-gap: 350px;
  } 
-#menu-title{
+.menu-title{
     color: #3A3A3A;
     font-size: 20px;
     margin-right: 35px;
@@ -90,8 +90,10 @@ body{
 .heading-banner .front-image{
    position:absolute;
    top: 0;
-   width: 440px;
-   height: 414px;
+   width: 125px;
+   height: 125px;
+   margin-top: 25px;
+   margin-left:5px;
 } 
 /* ---------company logo style ----------*/
 .company-logo-container{
@@ -107,7 +109,7 @@ body{
    margin-left:50px;   
 }
 /*------------main content style---------------------- */
-.main-content{ 
+.middle-content{ 
     text-align: center;
     color: #3A3A3A;
     font-style: normal;
@@ -207,9 +209,9 @@ main{
     font-size: 14px;
     color: #787885;
 }
- /*-------------
+/*--------------------------------------------------------------------
  -----------------this is awosome features style-----------------------
-                      -------------------------------------------------- */
+ ---------------------------------------------------------------------- */
 #awesome-features{
      display: grid;
      grid-template-columns:repeat(2,1fr);
@@ -239,8 +241,8 @@ main{
     margin-left: 6px;
     height:700;
     Line-height :60px;
-    /* 
-    height: 224px; */
+    
+   /* height: 224px; */
    
 }
 .thumbnail-details p{
@@ -250,11 +252,7 @@ main{
     color: #6C6C6C;
     line-height: 20px;
     margin-top: 10px;
-/* or 175% */
-
-
-color: #6C6C6C;
-
+    color: #6C6C6C;
 }
 .thumbnail-details button{
     color: #FFFFFF;
@@ -263,7 +261,8 @@ color: #6C6C6C;
     border-radius: 3px;   
 }
 /*------------
-           -----footer style -----------------  */
+           ---------------footer style ---------------------
+           ------------------------------------------------------------  */
 #footer-container{
     background: #0A0826;color: #FFFFFF;
     text-align: center;
@@ -282,4 +281,152 @@ color: #6C6C6C;
 }
 .footer-icon .icon:hover{
     color:rgb(228, 167, 13)
+}
+/*---------- 
+            -------
+            -------------media queries styles --
+            ------------------------------------------------------*/
+
+ /*-------------for mobile devices----------- */
+
+@media only screen and (max-width:688px) { 
+    body{
+        background: #FFFFFF;
+    }
+    /* ----------- header style start --------------
+    ----------------------------------------------*/
+   /*--- manu-container style--- */
+    .menu-container{
+        display: grid;grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .menu-container .menu-template a{
+        display: none;
+    }
+    .menu-container .menu-template #amazon-shopping{
+        font-size: 2em;
+        display: block;
+        font-size: 2.5em;
+        color: rgb(9, 57, 145);
+        text-align: center;
+        margin-top: 30px; margin-right: 2.3em;
+    }
+    /*-------heading-container style ----*/
+    .heading-container{
+        display: flex;flex-direction: column-reverse;
+    }
+    .heading-container .heading-banner img{
+        width: 307px;
+        height: 307px;margin-top: 1em;
+    }
+    .heading-container .heading-banner{
+        margin-top: 9.5em;
+        margin-left: 5em; 
+    }
+    .heading-container .heading-banner .bacground-image img{
+        margin-right: 10em;margin-bottom:-12em;
+    }
+    .heading-container .main-heading{
+        font-size: 1.5em;color: #3A3A3A;margin-top: -3.5em;
+        
+    }
+    .heading-container .main-heading #main-heading-tiny{
+       font-size: 1em;
+    }
+    .heading-container .main-heading h1{text-align: center;
+      margin-left: -0.4em;font-size: 40px;
+    }
+    .heading-container .main-heading p{margin-left: 4.5em;
+        width: 65%;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    } 
+    .heading-container .main-heading .heading-button{
+        padding-top: 4px;
+        padding-left: 6px;padding-bottom: -6em;
+        padding-right: 4px;
+        margin-left: 155px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+   /*-------company-logo-container style ------*/
+    .company-logo-container{
+         width: 70%;background-color:none;margin-left: 6.4em;margin-bottom: 61px;
+    }
+    .second-row-logo{
+        display: none;
+    }
+    .company-logo-container img{
+       margin-left: 2em;
+    }
+    /*-------------------header style end----------------
+    -------------------------------------------------------- */
+
+
+    /*-----------------
+                      .middle-content style start--------------- 
+                      ------------------------------------- */
+    .middle-content{
+        text-align: center;
+        color:#3A3A3A;
+      margin-bottom: 1em;margin-top:2em;font-size: 40px;
+    }
+    /*-----------------
+                      .middle-content style end--------------- 
+                      ------------*/
+
+
+   /*------------------- main style start ------------------
+    -----------------------------------------------------------*/
+   /*----------container---------- */
+    main .container .detail-collection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 2em;width: 100%;justify-items: center;
+    }
+    main .container .detail-collection .collection{
+        margin-top: 3em;margin-left: 8.5em;
+    }
+    main .container .more-collection{ 
+        margin-top: 219em;
+        margin-right: 90px;
+    }
+    /*-----awesome-features style ------*/
+    main #awesome-features{
+        display: flex;flex-direction: column-reverse;margin-top:27em;width: 100%;
+    }
+    main #awesome-features .thumbnail-details h1{font-weight: bold;
+        font-size:40px;width: 571px; line-height: 48px;
+        text-align: center;margin-left: 3.4em;
+    }
+    main #awesome-features .thumbnail-details p{
+        text-align: center;width: 329px;margin-left: 16em;
+        height: 88px;margin-top: 2em;
+    }
+    main #awesome-features .thumbnail-details button{
+        text-align: center;margin-left: 27em;margin-top: 2em;
+    }
+    main #awesome-features .features-thumbnail{
+       margin-left: -83px;margin-top: 20px;
+    }
+   /*-------------------- main style end----------------------
+    ------------------------------------------------------------*/
+
+    /*-------------------footer style start -------------------
+    -----------------------------------------------------------*/ 
+  
+    #footer-container{ display: flex;flex-direction: column;
+        margin-top: -6em;width: 100%;
+        /* padding-left:-100em;
+        padding-right:-2000px; */
+       
+    }
+    #footer-container .footer-info{
+        padding-top: -7em;
+    }
+    /* -------------------footer style end -------------------
+    -----------------------------------------------------------*/ 
 }
